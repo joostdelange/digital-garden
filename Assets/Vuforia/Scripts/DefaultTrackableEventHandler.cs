@@ -88,7 +88,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
         var r = new System.Random();
-        var randomIndex = r.Next(0, 2);
+        var randomIndex = r.Next(0, 3);
 
         rendererComponents[randomIndex].enabled = true;
         colliderComponents[randomIndex].enabled = true;
