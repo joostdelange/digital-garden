@@ -1,12 +1,12 @@
 # Digital Garden
 A digital garden created with Unity and Vuforia
 
-#### Example
+### Example
 Every time the user taps the screen it will spawn a random object.
 
 ![Example](https://github.com/joostdelange/digital-garden/blob/master/blob/ScreenRecording_04-02-2019%2015-20-44.gif?raw=true)
 
-#### Usage
+### Usage
 1. Clone the project and open it in Unity;
 2. Open *Build settings*;
 3. Set the platform to Android or iOS;
