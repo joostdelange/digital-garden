@@ -15,3 +15,5 @@ The reload button will restart the `SceneManager.LoadScene` function.
 4. Click *Player settings*;
 5. Under 'Other', set Bundle Identifier to your own;
 6. Build the project.
+
+Make sure you have an Android or iOS compatible device, this can't be run in a simulator.
