@@ -4,6 +4,8 @@ A digital garden created with Unity and Vuforia
 ### Example
 Every time the user taps the screen it will spawn a random object.
 
+The reload button will restart the `SceneManager.LoadScene` function.
+
 ![Example](https://github.com/joostdelange/digital-garden/blob/master/blob/ScreenRecording_04-02-2019%2015-20-44.gif?raw=true)
 
 ### Usage
