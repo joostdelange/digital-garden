@@ -80,19 +80,36 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     #endregion // PUBLIC_METHODS
 
     #region PROTECTED_METHODS
+    
+    public int previousNumber;
+    
+    private int GenerateRandomNumber()
+    {
+        while (true)
+        {
+            var r = new System.Random();
+            var randomNumber = r.Next(0, 4);
+
+            if (previousNumber == randomNumber)
+            {
+                continue;
+            }
+
+            previousNumber = randomNumber;
+            return randomNumber;
+            break;
+        }
+    }
 
     protected virtual void OnTrackingFound()
     {
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
-        var colliderComponents = GetComponentsInChildren<Collider>(true);
-        var canvasComponents = GetComponentsInChildren<Canvas>(true);
+//        var colliderComponents = GetComponentsInChildren<Collider>(true);
+//        var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
-        var r = new System.Random();
-        var randomIndex = r.Next(0, 3);
-
-        rendererComponents[randomIndex].enabled = true;
-        colliderComponents[randomIndex].enabled = true;
-        canvasComponents[randomIndex].enabled = true;
+        rendererComponents[GenerateRandomNumber()].enabled = true;
+//        colliderComponents[ReturnRandomNumber()].enabled = true;
+//        canvasComponents[ReturnRandomNumber()].enabled = true;
 
 //        foreach (var component in rendererComponents)
 //            component.enabled = true;
