@@ -1,23 +1,35 @@
 fileFormatVersion: 2
-guid: 1122b13b183eb46848bfb63ddb73ccdd
+guid: 7ca4eea49c22e4e7a93608736a857d0e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cylinder002
-    100002: //RootNode
-    100004: Hedra001
-    400000: Cylinder002
-    400002: //RootNode
-    400004: Hedra001
-    2100000: 'Material #47'
-    2100002: 'Material #48'
-    2100004: 'Material #49'
-    2300000: Cylinder002
-    2300002: Hedra001
-    3300000: Cylinder002
-    3300002: Hedra001
-    4300000: Hedra001
-    4300002: Cylinder002
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Material.020
+    2100002: Material.004
+    2100004: Material.000
+    2100006: Material.014
+    2100008: Material.015
+    2100010: Material.016
+    2100012: Material.008
+    2100014: Material.006
+    2100016: Material.019
+    2100018: Material.003
+    2100020: Material.017
+    2100022: Material.011
+    2100024: Material.005
+    2100026: Material.012
+    2100028: Material.009
+    2100030: Material.021
+    2100032: Material.007
+    2100034: Material.022
+    2100036: Material.023
+    2100038: Material.024
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Icosphere.007
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -70,8 +82,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -98,7 +110,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

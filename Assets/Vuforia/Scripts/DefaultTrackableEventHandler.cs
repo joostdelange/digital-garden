@@ -81,14 +81,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     #region PROTECTED_METHODS
     
-    public int previousNumber;
+    public int previousNumber = 0;
     
     private int GenerateRandomNumber()
     {
         while (true)
         {
             var r = new System.Random();
-            var randomNumber = r.Next(0, 4);
+            var randomNumber = r.Next(0, 7);
 
             if (previousNumber == randomNumber)
             {
@@ -97,7 +97,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
             previousNumber = randomNumber;
             return randomNumber;
-            break;
         }
     }
 
@@ -105,11 +104,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
 //        var colliderComponents = GetComponentsInChildren<Collider>(true);
-//        var canvasComponents = GetComponentsInChildren<Canvas>(true);
+//        var canvasComponents = GetComponentsInChildren<Canvas>(true);        
 
         rendererComponents[GenerateRandomNumber()].enabled = true;
-//        colliderComponents[ReturnRandomNumber()].enabled = true;
-//        canvasComponents[ReturnRandomNumber()].enabled = true;
+//        colliderComponents[GenerateRandomNumber()].enabled = true;
+//        canvasComponents[GenerateRandomNumber()].enabled = true;
 
 //        foreach (var component in rendererComponents)
 //            component.enabled = true;

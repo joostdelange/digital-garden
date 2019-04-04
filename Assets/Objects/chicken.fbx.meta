@@ -1,16 +1,20 @@
 fileFormatVersion: 2
-guid: f70d18545feae4517b216a7bfc8a657d
+guid: 9f44386474b78433f8944a7c3b9a75a0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: RED
-    2100002: ZLEAF0G
-    2100004: GREEN3
+    2100000: white
+    2100002: pale red
+    2100004: gold
+    2100006: black
+    2100008: pale grey
+    2100010: mid grey
+    2100012: buttermilk
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Rose01
+    4300000: Chicken
   externalObjects: {}
   materials:
     importMaterials: 1

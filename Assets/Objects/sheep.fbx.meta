@@ -1,21 +1,39 @@
 fileFormatVersion: 2
-guid: aa96690bcb8a74e0fa1bcee7dc9d6ce9
+guid: a847630e8496c4c06b74586ced4c7d16
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cylinder
-    100002: Icosphere
-    100004: //RootNode
-    400000: Cylinder
-    400002: Icosphere
-    400004: //RootNode
-    2100000: No Name
-    2300000: Cylinder
-    2300002: Icosphere
-    3300000: Cylinder
-    3300002: Icosphere
-    4300000: Cylinder
-    4300002: Icosphere
+    100000: black
+    100002: brown
+    100004: darkbrown
+    100006: green
+    100008: Icosphere.003_Icosphere.009
+    100010: Main Camera
+    100012: Render
+    100014: //RootNode
+    100016: sheep
+    100018: Sky
+    100020: white
+    400000: black
+    400002: brown
+    400004: darkbrown
+    400006: green
+    400008: Icosphere.003_Icosphere.009
+    400010: Main Camera
+    400012: Render
+    400014: //RootNode
+    400016: sheep
+    400018: Sky
+    400020: white
+    2100000: black
+    2100002: brown
+    2100004: darkbrown
+    2100006: green
+    2100008: white
+    2300000: Icosphere.003_Icosphere.009
+    3300000: Icosphere.003_Icosphere.009
+    4300000: Icosphere.003_Icosphere.009
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
