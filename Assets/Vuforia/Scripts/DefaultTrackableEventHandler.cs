@@ -103,12 +103,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected virtual void OnTrackingFound()
     {
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
-//        var colliderComponents = GetComponentsInChildren<Collider>(true);
-//        var canvasComponents = GetComponentsInChildren<Canvas>(true);        
+        var colliderComponents = GetComponentsInChildren<Collider>(true);
+        var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
-        rendererComponents[GenerateRandomNumber()].enabled = true;
-//        colliderComponents[GenerateRandomNumber()].enabled = true;
-//        canvasComponents[GenerateRandomNumber()].enabled = true;
+        var randomNumber = GenerateRandomNumber();
+
+        rendererComponents[randomNumber].enabled = true;
+        colliderComponents[randomNumber].enabled = true;
+        canvasComponents[randomNumber].enabled = true;
 
 //        foreach (var component in rendererComponents)
 //            component.enabled = true;
