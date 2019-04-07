@@ -111,15 +111,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         rendererComponents[randomNumber].enabled = true;
         colliderComponents[randomNumber].enabled = true;
         canvasComponents[randomNumber].enabled = true;
-
-//        foreach (var component in rendererComponents)
-//            component.enabled = true;
-//
-//        foreach (var component in colliderComponents)
-//            component.enabled = true;
-//
-//        foreach (var component in canvasComponents)
-//            component.enabled = true;
     }
 
 
