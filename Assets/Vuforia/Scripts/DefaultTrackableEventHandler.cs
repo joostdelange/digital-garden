@@ -6,8 +6,11 @@ All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
+using System;
+using System.Diagnostics;
 using UnityEngine;
 using Vuforia;
+using Debug = UnityEngine.Debug;
 
 /// <summary>
 /// A custom handler that implements the ITrackableEventHandler interface.
@@ -81,23 +84,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     #region PROTECTED_METHODS
     
-    public int previousNumber = 0;
-    
     private int GenerateRandomNumber()
     {
-        while (true)
-        {
-            var r = new System.Random();
-            var randomNumber = r.Next(0, 7);
+        var r = new System.Random();
+        var random = r.Next(0, 100);
 
-            if (previousNumber == randomNumber)
-            {
-                continue;
-            }
-
-            previousNumber = randomNumber;
-            return randomNumber;
-        }
+        return random < 90 ? r.Next(0, 6) : 6;
     }
 
     protected virtual void OnTrackingFound()

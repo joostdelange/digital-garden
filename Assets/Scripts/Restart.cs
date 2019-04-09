@@ -11,6 +11,10 @@ public class Restart : MonoBehaviour
         SceneManager.LoadScene("Main");
     }
 
+	public void ShowInstructions1() {
+		instructions1.SetActive(true);
+	}
+
     public void DismissInstructions1()
     {
         instructions1.SetActive(false);
