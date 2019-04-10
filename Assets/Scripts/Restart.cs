@@ -6,6 +6,8 @@ public class Restart : MonoBehaviour
     public GameObject instructions1;
     public GameObject instructions2;
     public GameObject instructions3;
+	public GameObject instructions4;
+	public GameObject instructions5;
     
     public void RestartGame() {
         SceneManager.LoadScene("Main");
@@ -30,5 +32,17 @@ public class Restart : MonoBehaviour
     public void DismissInstructions3()
     {
         instructions3.SetActive(false);
+		instructions4.SetActive(true);
     }
+
+	public void DismissInstructions4()
+	{
+		instructions4.SetActive(false);
+		instructions5.SetActive(true);
+	}
+
+	public void DismissInstructions5()
+	{
+		instructions5.SetActive(false);
+	}
 }
