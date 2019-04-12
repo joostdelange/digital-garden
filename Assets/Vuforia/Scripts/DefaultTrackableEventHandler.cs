@@ -89,7 +89,15 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var r = new System.Random();
         var random = r.Next(0, 100);
 
-        return random < 90 ? r.Next(0, 6) : 6;
+        if (random <= 15)
+        {
+            return r.Next(2, 5);
+        }
+        if (random >= 16 && random < 98)
+        {
+            return r.Next(0, 2);
+        }
+        return 6;
     }
 
     protected virtual void OnTrackingFound()
